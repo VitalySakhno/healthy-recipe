@@ -23,6 +23,11 @@ a {
     text-decoration: none;
     color: inherit;
 }
+button {
+    border: 0 none transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
 /* #endregion */
 
 
