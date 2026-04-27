@@ -1,10 +1,15 @@
+
 :root {
     --neutral-0: #FFFFFF;
     --neutral-100: #F6F5F1;
-    /* --neutral-200: #EDEBE5; */
+    --neutral-200: #E0E6E3;
     --neutral-300: #d0dcd9; 
     --neutral-600: #395852;
     --neutral-900: #163A34;
+    
+    --orange-500: #FE9F6B;
+    --teal-500: #49AC9B;
+    --indigo-500: #697DDB;
 }
 
 /* #region Скидання стилів браузера */
@@ -23,10 +28,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 button {
     border: 0 none transparent;
     background-color: transparent;
     cursor: pointer;
+    padding: 0;
 }
 /* #endregion */
 
@@ -98,6 +105,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    button {
+        width: 40px;
+        height: 40px;
+        background: var(--neutral-200);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
 }
 
 main {
@@ -127,5 +143,93 @@ main {
             border-radius: 3px;
         }
     }
+    .features {
+        margin-block-end: 64px;
+        h2 {
+            margin-block-end: 32px;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 120%;
+            letter-spacing: -2px;
+            color: var(--neutral-900);
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            column-gap: 32px;
+        }
+         li {
+            min-height: 194px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            position: relative;
+            padding-block-start: 80px;
+            box-sizing: border-box;
+            &:before {
+                content: "";
+                width: 60px;
+                height: 60px;
+                border-radius: 12px;
+                background: var(--neutral-0);
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1px solid var(--neutral-200);
+                box-shadow: 0px 1px 0px var(--neutral-200);
+            }
+            &:nth-child(1):before {
+                background-image: url("../assets/images/icon-whole-food-recipes.svg" );
+            }
+            &:nth-child(2):before {
+                background-image: url("../assets/images/icon-minimum-fuss.svg" );
+            }
+            &:nth-child(3):before {
+                background-image: url("../assets/images/icon-search-in-seconds.svg" );
+            }    
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 130%;
+            letter-spacing: -1px;
+            color: var(--neutral-900);
+            margin-block-end: 12px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: -0.4px;
+            color: var(--neutral-600);
+        }   
+    }
+    .built {
+        margin-block-end: 64px;
+        div {
+            margin-block-end: 32px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        h2 {
+            /* margin-block-end: 70px; */
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 120%;
+            letter-spacing: -2px;
+            color: var(--neutral-900);
+        }
+        p {
+            font-size: 20px;
+            line-height: 150%;
+            letter-spacing: -0.4px;
+            color: var(--neutral-600);
+        }
+        img {
+            border-radius: 10px;
+        } 
+    }
 }
-
