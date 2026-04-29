@@ -1,77 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe finder website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
-  Our mission
+    <link rel="stylesheet" href="./css/style.css" />
 
-  Help more people cook nourishing meals, more often.
+    <title>Frontend Mentor | Recipe finder website</title>
+  </head>
 
-  Healthy Recipe Finder was created to prove that healthy 
-  eating can be convenient, affordable, and genuinely delicious. 
+  <body class="nunito-sans about-page">
+    <!-- #region Header -->
+    <header class="conteiner">
+      <img src="./assets/images/logo.svg" alt="Recipe finder logo" />
+      <button>
+        <img src="./assets/images/icon-hamburger-menu.svg" alt="Menu" />
+      </button>
+    </header>
+    <!-- #endregion -->
+    <hr />
+    <main>
+      <section class="conteiner hero">
+        <div>
+          <hgroup>
+            <h1 class="nunito">Our mission</h1>
+            <p class="nunito">
+              Help more people cook nourishing meals, more often.
+            </p>
+          </hgroup>
+          <p>
+            Healthy Recipe Finder was created to prove that healthy eating can
+            be convenient, affordable, and genuinely delicious.
+          </p>
+          <p>
+            We showcase quick, whole-food dishes that anyone can master—no fancy
+            equipment, no ultra-processed shortcuts—just honest ingredients and
+            straightforward steps.
+          </p>
+        </div>
+        <img
+          src="./assets/images/image-about-our-mission-large.webp"
+          width="343"
+          alt=""
+        />
+      </section>
+      <hr />
+      <section class="conteiner why list">
+        <h2 class="nunito">Why we exist</h2>
 
-  We showcase quick, whole-food dishes that anyone can master—no 
-  fancy equipment, no ultra-processed shortcuts—just honest 
-  ingredients and straightforward steps.
+        <ul>
+          <li>
+            <h3 class="nunito">Cut through the noise.</h3>
+            <p>
+              The internet is bursting with recipes, yet most busy cooks still
+              default to take-away or packaged foods. We curate a tight
+              collection of fool-proof dishes so you can skip the scrolling and
+              start cooking.
+            </p>
+          </li>
 
-  Why we exist
+          <li>
+            <h3 class="nunito">Empower home kitchens.</h3>
+            <p>
+              When you control what goes into your meals, you control how you
+              feel. Every recipe is built around unrefined ingredients and ready
+              in about half an hour of active prep.
+            </p>
+          </li>
 
-  Cut through the noise. 
-  The internet is bursting with recipes, yet most busy cooks 
-  still default to take-away or packaged foods. We curate a 
-  tight collection of fool-proof dishes so you can skip the 
-  scrolling and start cooking.
+          <li>
+            <h3 class="nunito">Make healthy look good.</h3>
+            <p>
+              High-resolution imagery shows you exactly what success looks
+              like—because we eat with our eyes first, and confidence matters.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section class="conteiner our list">
+        <h2 class="nunito">Our food philosophy</h2>
+        <ul>
+          <li>
+            <h3 class="nunito">Whole ingredients first.</h3>
+            <p>
+              Fresh produce, grains, legumes, herbs, and quality fats form the
+              backbone of every recipe.
+            </p>
+          </li>
 
-  Empower home kitchens. 
-  When you control what goes into your meals, you control how 
-  you feel. Every recipe is built around unrefined ingredients 
-  and ready in about half an hour of active prep.
+          <li>
+            <h3 class="nunito">Flavor without compromise.</h3>
+            <p>
+              Spices, citrus, and natural sweetness replace excess salt, sugar,
+              and additives.
+            </p>
+          </li>
 
-  Make healthy look good. 
-  High-resolution imagery shows you exactly what success looks 
-  like—because we eat with our eyes first, and confidence matters.
+          <li>
+            <h3 class="nunito">Respect for time.</h3>
+            <p>
+              Weeknight meals should slot into real schedules; weekend cooking
+              can be leisurely but never wasteful.
+            </p>
+          </li>
 
-  Our food philosophy
+          <li>
+            <h3 class="nunito">Sustainable choices.</h3>
+            <p>
+              Short ingredient lists cut down on food waste and carbon
+              footprint, while plant-forward dishes keep things planet-friendly.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section class="conteiner beyond">
+        <div>
+          <h2 class="nunito">Beyond the plate</h2>
 
-  Whole ingredients first. 
-  Fresh produce, grains, legumes, herbs, and quality fats form the 
-  backbone of every recipe.
+          <p>
+            We believe food is a catalyst for community and well-being. By
+            sharing approachable recipes, we hope to:
+          </p>
+          <ul>
+            <li>
+              Encourage family dinners and social cooking.
+            </li>
+            <li>
+              Reduce reliance on single-use packaging and delivery waste.
+            </li>
+            <li>
+              Spark curiosity about seasonal produce and local agriculture.
+            </li>
+          </ul>
+        </div>
+        <img
+          src="./assets/images/image-about-beyond-the-plate-large.webp"
+          width="343"
+          alt=""
+        />
+      </section>
 
-  Flavor without compromise. 
-  Spices, citrus, and natural sweetness replace excess salt, sugar, 
-  and additives.
+      <section class="conteiner ready">
+        <div>
+          <h2 class="nunito">Ready to cook smarter?</h2>
 
-  Respect for time. 
-  Weeknight meals should slot into real schedules; weekend cooking 
-  can be leisurely but never wasteful.
+          <p>
+            Hit the button, pick a recipe, and get dinner on the table—fast.
+          </p>
+        </div>
 
-  Sustainable choices. 
-  Short ingredient lists cut down on food waste and carbon footprint, 
-  while plant-forward dishes keep things planet-friendly.
+        <a class="btn" href="./recipes.html#all-recipes">Browse recipes</a>
+      </section>
+    </main>
+    <!-- #endregion -->
 
-  Beyond the plate
-
-  We believe food is a catalyst for community and well-being. 
-  By sharing approachable recipes, we hope to:
-
-  Encourage family dinners and social cooking.
-  Reduce reliance on single-use packaging and delivery waste.
-  Spark curiosity about seasonal produce and local agriculture.
-
-  Ready to cook smarter?
-
-  Hit the button, pick a recipe, and get dinner on the table—fast.
-
-  Browse recipes
-
-  Made with ❤️ and 🥑
-
-</body>
+    <!-- #region Footer -->
+    <footer class="conteiner">
+      <ul>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/icon-instagram.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/images/icon-bluesky.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/images/icon-tiktok.svg" alt="" /></a>
+        </li>
+      </ul>
+      <p>Made with ❤️ and 🥑</p>
+    </footer>
+    <!-- #endregion -->
+  </body>
 </html>
