@@ -1,30 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe finder website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
-  Explore our simple, healthy recipes
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Recipe finder website</title>
+  </head>
+  <body class="nunito-sans recipes-page">
+    <!-- #region Header -->
+    <header class="conteiner">
+      <img src="./assets/images/logo.svg" alt="Recipe finder logo" />
+      <button>
+        <img src="./assets/images/icon-hamburger-menu.svg" alt="Menu" />
+      </button>
+    </header>
+    <!-- #endregion -->
 
-  Discover eight quick, whole-food dishes that fit real-life 
-  schedules and taste amazing. Use the search bar to find a 
-  recipe by name or ingredient, or simply scroll the list and 
-  let something delicious catch your eye.
+    <!-- #endregion -->
+    <hr />
+    <main>
+      <section class="hero conteiner">
+        <h1 class="nunito">Explore our simple, healthy recipes</h1>
 
-  Max Prep Time
-  Max Cook Time
+        <p>
+          Discover eight quick, whole-food dishes that fit real-life schedules
+          and taste amazing. Use the search bar to find a recipe by name or
+          ingredient, or simply scroll the list and let something delicious
+          catch your eye.
+        </p>
+      </section>
 
-  Search by name or ingredient...
-  
-  <!-- Populate recipes using data from the data.json file -->
+      <div class="recipes conteiner">
+        <form class="filters">
+          <select name="" id="prep-time">
+            <option value="">Max Prep Time</option>
+            <option value="">0 minutes</option>
+            <option value="5">5 minutes</option>
+            <option value="10">10 minutes</option>
+            <option value="clear">clear</option>
+          </select>
+          <select name="" id="cook-time">
+            <option value="">Max Cook Time</option>
+            <option value="">0 minutes</option>
+            <option value="5">5 minutes</option>
+            <option value="10">10 minutes</option>
+            <option value="15">15 minutes</option>
+            <option value="20">20 minutes</option>
+            <option value="clear">clear</option>
+          </select>
+          <input type="text" placeholder="Search by name or ingredient..." id="search-input"/>
+        </form>
+        <ul class="recipes-list">
+          <li>
+            <img src="./assets/images/mediterranean-chickpea-salad-small.webp" alt="" />
+            <h2 class="nunito">Mediterranean Chickpea Salad</h2>
+            <p>
+              A refreshing, protein-packed salad tossed in a lemon-olive oil dressing.
+            </p>
+            <div>
+              <span>Servings: 2</span>
+              <span>Prep: 10 mins</span>
+              <span>Cook: 0 mins</span>
+            </div>
+            <a href="#">View Recipe</a>
+          </li>
+        </ul>
+        <!-- Populate recipes using data from the data.json file -->
+      </div>
+    </main>
+    <!-- #endregion -->
 
-  Made with ❤️ and 🥑
-
-</body>
+    <!-- #region Footer -->
+    <footer class="conteiner">
+      <ul>
+        <li>
+          <a href="#"
+            ><img src="./assets/images/icon-instagram.svg" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/images/icon-bluesky.svg" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/images/icon-tiktok.svg" alt="" /></a>
+        </li>
+      </ul>
+      <p>Made with ❤️ and 🥑</p>
+    </footer>
+    <!-- #endregion -->
+  </body>
 </html>
